@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+</head>
+<body>
+    <main>
+        <header>
+            <div class="theme">
+                <div class="sun">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"  transform-origin="12px 11.999148885835893px" style="transform: none; transform-origin: 12px 11.9991px;"><path id="icons8-sun_1_" data-name="icons8-sun (1)" d="M12,0a.945.945,0,0,0-1,1V2a1,1,0,0,0,2,0V1A.945.945,0,0,0,12,0ZM4.2,3.2a.986.986,0,0,0-.7.3.967.967,0,0,0,0,1.4l.7.7A.99.99,0,0,0,5.6,4.2l-.7-.7A.991.991,0,0,0,4.2,3.2Zm15.6,0a.991.991,0,0,0-.7.3l-.7.7a.99.99,0,0,0,1.4,1.4l.7-.7a.967.967,0,0,0,0-1.4A.986.986,0,0,0,19.8,3.2ZM12,5a7,7,0,1,0,7,7,7,7,0,0,0-7-7ZM1,11a1,1,0,0,0,0,2H2a1,1,0,0,0,0-2Zm21,0a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2ZM4.9,18.1a.991.991,0,0,0-.7.3l-.7.7a.99.99,0,0,0,1.4,1.4l.7-.7a.967.967,0,0,0,0-1.4A.986.986,0,0,0,4.9,18.1Zm14.2,0a.986.986,0,0,0-.7.3.967.967,0,0,0,0,1.4l.7.7a.99.99,0,0,0,1.4-1.4l-.7-.7A.991.991,0,0,0,19.1,18.1ZM12,21a.945.945,0,0,0-1,1v1a1,1,0,0,0,2,0V22A.945.945,0,0,0,12,21Z" fill="#ffe3a4"></path></svg>
+                </div>
+                <div class="moon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 17 19"  transform-origin="8.477352142333984px 9.486003313912079px" style="transform: none; transform-origin: 8.47735px 9.486px;"><path id="moon" d="M36.7,18.974a9.469,9.469,0,0,0,7.369-3.513.445.445,0,0,0-.428-.717A7.432,7.432,0,0,1,38.571.982a.445.445,0,0,0-.139-.824A9.488,9.488,0,1,0,36.7,18.974Z" transform="translate(-27.211)" fill="#ffe3a4"></path></svg>
+                </div>
+            </div>
+            <ul class="nav">
+                <li class="active">All</li>
+                <li>About</li>
+                <li>Projects</li>
+                <li>Media</li>
+                <li>Language</li>
+            </ul>
+            <button class="contact-btn">
+                <a href="#">
+                    Contact
+                </a>
+            </button>
+        </header>
+        <div class="container">
+            <div class="box columns-2 rows-2 introduction">
+                <img src="images/avatar.png" alt="avatar image" class="avatar">
+                <h4>Hello! My name is</h4>
+                <h2 class="name">Hasan Mahmoud</h2>
+                <p class="text">
+                    I'm a self-taught front-end developer in Libya,
+                     and I've more than 1 year into my software engineering journey. 
+                     If you're hiring a front-end developer or need a website built, get in touch!
+                </p>
+                <button class="contact-btn">
+                    <a href="mailto:alfakhrecloud@gmail.com">
+                        Contact
+                    </a>
+                </button>
+            </div>
+            <div class="box columns-2 job-intro">
+                <h2 class="title">What I Do ...!</h2>
+                <ul class="text">
+                    <li>Develoliing and maintaining the user interface.</li>
+                    <li>Optimizing the user experience to keep it fast.</li>
+                    <li>Fixing bugs or problems that occur.</li>
+                    <li>Following SEO best practices.</li>
+                </ul>
+            </div>
+            <div class="box theme-box">
+
+                <div class="theme">
+                    <div class="sun">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"  transform-origin="12px 11.999148885835893px" style="transform: none; transform-origin: 12px 11.9991px;"><path id="icons8-sun_1_" data-name="icons8-sun (1)" d="M12,0a.945.945,0,0,0-1,1V2a1,1,0,0,0,2,0V1A.945.945,0,0,0,12,0ZM4.2,3.2a.986.986,0,0,0-.7.3.967.967,0,0,0,0,1.4l.7.7A.99.99,0,0,0,5.6,4.2l-.7-.7A.991.991,0,0,0,4.2,3.2Zm15.6,0a.991.991,0,0,0-.7.3l-.7.7a.99.99,0,0,0,1.4,1.4l.7-.7a.967.967,0,0,0,0-1.4A.986.986,0,0,0,19.8,3.2ZM12,5a7,7,0,1,0,7,7,7,7,0,0,0-7-7ZM1,11a1,1,0,0,0,0,2H2a1,1,0,0,0,0-2Zm21,0a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2ZM4.9,18.1a.991.991,0,0,0-.7.3l-.7.7a.99.99,0,0,0,1.4,1.4l.7-.7a.967.967,0,0,0,0-1.4A.986.986,0,0,0,4.9,18.1Zm14.2,0a.986.986,0,0,0-.7.3.967.967,0,0,0,0,1.4l.7.7a.99.99,0,0,0,1.4-1.4l-.7-.7A.991.991,0,0,0,19.1,18.1ZM12,21a.945.945,0,0,0-1,1v1a1,1,0,0,0,2,0V22A.945.945,0,0,0,12,21Z" fill="#ffe3a4"></path></svg>
+                    </div>
+                    <div class="moon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 17 19"  transform-origin="8.477352142333984px 9.486003313912079px" style="transform: none; transform-origin: 8.47735px 9.486px;"><path id="moon" d="M36.7,18.974a9.469,9.469,0,0,0,7.369-3.513.445.445,0,0,0-.428-.717A7.432,7.432,0,0,1,38.571.982a.445.445,0,0,0-.139-.824A9.488,9.488,0,1,0,36.7,18.974Z" transform="translate(-27.211)" fill="#ffe3a4"></path></svg>
+                    </div>
+                </div>
+
+            </div>
+
+            
+            <div class="box rows-2 comment-project">
+
+                <a href="https://cluod-alfakhre.github.io/interactive-comments-section-main/" target="_blank" class="arrow-link">
+                    <img src="images/arrow.svg" alt="arrow forward" class="arrow">
+                </a>
+
+                <div class="text">
+                    <h3>Interactive Comment Section Project</h3>
+                    <p>Frontend-Mentor Challenge For Intermediat Developer</p>
+                </div>
+                <img src="images/comment.jpg" alt="comment project" class="project-img">
+            </div>
+
+            <div class="box rows-2 learning-path">
+                <h2 class="title">
+                    Learning Path
+                </h2>
+
+                <div class="path">
+                    <div class="img">
+                        <svg width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title>file_type_html</title><polygon points="5.902 27.201 3.655 2 28.345 2 26.095 27.197 15.985 30 5.902 27.201" style="fill:#e44f26"/><polygon points="16 27.858 24.17 25.593 26.092 4.061 16 4.061 16 27.858" style="fill:#f1662a"/><polygon points="16 13.407 11.91 13.407 11.628 10.242 16 10.242 16 7.151 15.989 7.151 8.25 7.151 8.324 7.981 9.083 16.498 16 16.498 16 13.407" style="fill:#ebebeb"/><polygon points="16 21.434 15.986 21.438 12.544 20.509 12.324 18.044 10.651 18.044 9.221 18.044 9.654 22.896 15.986 24.654 16 24.65 16 21.434" style="fill:#ebebeb"/><polygon points="15.989 13.407 15.989 16.498 19.795 16.498 19.437 20.507 15.989 21.437 15.989 24.653 22.326 22.896 22.372 22.374 23.098 14.237 23.174 13.407 22.341 13.407 15.989 13.407" style="fill:#fff"/><polygon points="15.989 7.151 15.989 9.071 15.989 10.235 15.989 10.242 23.445 10.242 23.445 10.242 23.455 10.242 23.517 9.548 23.658 7.981 23.732 7.151 15.989 7.151" style="fill:#fff"/></svg>
+                        <svg width="32px" height="32px" viewBox="-52.5 0 361 361" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M127.844 360.088L23.662 331.166.445 70.766h255.11l-23.241 260.36-104.47 28.962z" fill="#264DE4"/><path d="M212.417 314.547l19.86-222.49H128V337.95l84.417-23.403z" fill="#2965F1"/><path d="M53.669 188.636l2.862 31.937H128v-31.937H53.669zM47.917 123.995l2.903 31.937H128v-31.937H47.917zM128 271.58l-.14.037-35.568-9.604-2.274-25.471h-32.06l4.474 50.146 65.421 18.16.147-.04V271.58z" fill="#EBEBEB"/><path d="M60.484 0h38.68v16.176H76.66v16.176h22.506v16.175H60.484V0zM106.901 0h38.681v14.066h-22.505v2.813h22.505v32.352h-38.68V34.46h22.505v-2.813H106.9V0zM153.319 0H192v14.066h-22.505v2.813H192v32.352h-38.681V34.46h22.505v-2.813H153.32V0z"/><path d="M202.127 188.636l5.765-64.641H127.89v31.937h45.002l-2.906 32.704H127.89v31.937h39.327l-3.708 41.42-35.62 9.614v33.226l65.473-18.145.48-5.396 7.506-84.08.779-8.576z" fill="#FFF"/></svg>
+                    </div>
+                    <div class="text">
+                        <p>Build Responsive Websites with HTML and CSS</p>
+                        <p class="state">completed</p>
+                    </div>
+                </div>
+                <div class="path">
+                    <div class="img">
+                        <svg width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" aria-label="JavaScript" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#f7df1e"/><path d="M324 370c10 17 24 29 47 29c20 0 33-10 33 -24c0-16 -13 -22 -35 -32l-12-5c-35-15 -58 -33 -58 -72c0-36 27 -64 70 -64c31 0 53 11 68 39l-37 24c-8-15 -17 -21 -31 -21c-14 0-23 9 -23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76c0 43-34 67 -80 67c-45 0-74 -21 -88 -49zm-170 4c8 13 14 25 31 25c16 0 26-6 26 -30V203h48v164c0 50-29 72 -72 72c-39 0-61 -20 -72 -44z"/></svg>
+                    </div>
+                    <div class="text">
+                        <p>The Complete JavaScript Course</p>
+                        <p class="state">completed</p>
+                    </div>
+                </div>
+                <div class="path">
+                    <div class="img">
+                        <svg width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="Angular" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#fff"/><g fill="#c3002f"><path id="a" d="M256 65v42l111 249h-42l-22-55h-47v146l151-84 27-235-178-63zm0 123v78h33l-33-78z"/></g><use fill="#dd0031" xlink:href="#a" transform="matrix(-1,0,0,1,512,0)"/></svg>
+                    </div>
+                    <div class="text">
+                        <p>Angular Framwork</p>
+                        <p class="state">completed</p>
+                    </div>
+                </div>
+                <div class="path">
+                    <div class="img">
+                        <svg width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="Angular" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#fff"/><g fill="#c3002f"><path id="a" d="M256 65v42l111 249h-42l-22-55h-47v146l151-84 27-235-178-63zm0 123v78h33l-33-78z"/></g><use fill="#dd0031" xlink:href="#a" transform="matrix(-1,0,0,1,512,0)"/></svg>
+                    </div>
+                    <div class="text">
+                        <p>Angular Material</p>
+                        <p class="state">completed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box columns-2 store project">
+                <a href="https://cluod-alfakhre.github.io/ecommerce-product-pag-angular/" target="_blank" class="arrow-link">
+                    <img src="images/arrow.svg" alt="arrow forward" class="arrow">
+                </a>
+
+                <div class="text">
+                    <h3>Ecomerce Project</h3>
+                    <p>Frontend-Mentor Challenge For<br>Intermediat Developer</p>
+                </div>
+                <img src="images/store.jpg" alt="store image" class="project-img">
+            </div>
+
+            <div class="box slider">
+                
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <img src="images/time-pro.jpg" alt="time tracking project">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/todo-pro.jpg" alt="Todo list project">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/jobs-pro.jpg" alt="Jobs filter project">
+                      </div>
+                      
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev swiper-button"></div>
+                    <div class="swiper-button-next swiper-button"></div>
+                  
+                </div>
+
+            </div>
+
+            <div class="box columns-2 space project">
+
+                <a href="https://space-project-350b1.web.app/home" class="arrow-link" target="_blank">
+                    <img src="images/arrow.svg" alt="arrow forward" class="arrow">
+                </a>
+
+                <div class="text">
+                    <h3>Space Turism Project</h3>
+                    <p>Frontend-Mentor Challenge For<br>Intermediat Developer</p>
+                </div>
+                <img src="images/space.jpg" alt="space image" class="project-img">
+            </div>
+            <div class="box columns-2 media frontend-mentor">
+
+                <a href="https://www.frontendmentor.io/profile/cluod-Alfakhre" target="_blank" class="arrow-link">
+                    <img src="images/arrow.svg" alt="arrow forward" class="arrow">
+                </a>
+
+                <img src="images/frontend-mentor.svg" alt="frontend-mentor" class="logo">
+
+                <svg width="60px" height="60px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="dots"> <circle cx="4.5" cy="2.5" r=".6" fill="currentColor" /> <circle cx="4.5" cy="4.5" r=".6" fill="currentColor" /> <circle cx="4.5" cy="6.499" r=".6" fill="currentColor" /> <circle cx="4.5" cy="8.499" r=".6" fill="currentColor" /> <circle cx="4.5" cy="10.498" r=".6" fill="currentColor" /> <circle cx="4.5" cy="12.498" r=".6" fill="currentColor" /> <circle cx="6.5" cy="2.5" r=".6" fill="currentColor" /> <circle cx="6.5" cy="4.5" r=".6" fill="currentColor" /> <circle cx="6.5" cy="6.499" r=".6" fill="currentColor" /> <circle cx="6.5" cy="8.499" r=".6" fill="currentColor" /> <circle cx="6.5" cy="10.498" r=".6" fill="currentColor" /> <circle cx="6.5" cy="12.498" r=".6" fill="currentColor" /> <circle cx="8.499" cy="2.5" r=".6" fill="currentColor" /> <circle cx="8.499" cy="4.5" r=".6" fill="currentColor" /> <circle cx="8.499" cy="6.499" r=".6" fill="currentColor" /> <circle cx="8.499" cy="8.499" r=".6" fill="currentColor" /> <circle cx="8.499" cy="10.498" r=".6" fill="currentColor" /> <circle cx="8.499" cy="12.498" r=".6" fill="currentColor" /> <circle cx="10.499" cy="2.5" r=".6" fill="currentColor" /> <circle cx="10.499" cy="4.5" r=".6" fill="currentColor" /> <circle cx="10.499" cy="6.499" r=".6" fill="currentColor" /> <circle cx="10.499" cy="8.499" r=".6" fill="currentColor" /> <circle cx="10.499" cy="10.498" r=".6" fill="currentColor" /> <circle cx="10.499" cy="12.498" r=".6" fill="currentColor" />
+                </svg>
+                <svg width="60px" height="60px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="dots"> <circle cx="4.5" cy="2.5" r=".6" fill="currentColor" /> <circle cx="4.5" cy="4.5" r=".6" fill="currentColor" /> <circle cx="4.5" cy="6.499" r=".6" fill="currentColor" /> <circle cx="4.5" cy="8.499" r=".6" fill="currentColor" /> <circle cx="4.5" cy="10.498" r=".6" fill="currentColor" /> <circle cx="4.5" cy="12.498" r=".6" fill="currentColor" /> <circle cx="6.5" cy="2.5" r=".6" fill="currentColor" /> <circle cx="6.5" cy="4.5" r=".6" fill="currentColor" /> <circle cx="6.5" cy="6.499" r=".6" fill="currentColor" /> <circle cx="6.5" cy="8.499" r=".6" fill="currentColor" /> <circle cx="6.5" cy="10.498" r=".6" fill="currentColor" /> <circle cx="6.5" cy="12.498" r=".6" fill="currentColor" /> <circle cx="8.499" cy="2.5" r=".6" fill="currentColor" /> <circle cx="8.499" cy="4.5" r=".6" fill="currentColor" /> <circle cx="8.499" cy="6.499" r=".6" fill="currentColor" /> <circle cx="8.499" cy="8.499" r=".6" fill="currentColor" /> <circle cx="8.499" cy="10.498" r=".6" fill="currentColor" /> <circle cx="8.499" cy="12.498" r=".6" fill="currentColor" /> <circle cx="10.499" cy="2.5" r=".6" fill="currentColor" /> <circle cx="10.499" cy="4.5" r=".6" fill="currentColor" /> <circle cx="10.499" cy="6.499" r=".6" fill="currentColor" /> <circle cx="10.499" cy="8.499" r=".6" fill="currentColor" /> <circle cx="10.499" cy="10.498" r=".6" fill="currentColor" /> <circle cx="10.499" cy="12.498" r=".6" fill="currentColor" />
+                </svg>
+                <svg width="60px" height="60px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="dots"> <circle cx="4.5" cy="2.5" r=".6" fill="currentColor" /> <circle cx="4.5" cy="4.5" r=".6" fill="currentColor" /> <circle cx="4.5" cy="6.499" r=".6" fill="currentColor" /> <circle cx="4.5" cy="8.499" r=".6" fill="currentColor" /> <circle cx="4.5" cy="10.498" r=".6" fill="currentColor" /> <circle cx="4.5" cy="12.498" r=".6" fill="currentColor" /> <circle cx="6.5" cy="2.5" r=".6" fill="currentColor" /> <circle cx="6.5" cy="4.5" r=".6" fill="currentColor" /> <circle cx="6.5" cy="6.499" r=".6" fill="currentColor" /> <circle cx="6.5" cy="8.499" r=".6" fill="currentColor" /> <circle cx="6.5" cy="10.498" r=".6" fill="currentColor" /> <circle cx="6.5" cy="12.498" r=".6" fill="currentColor" /> <circle cx="8.499" cy="2.5" r=".6" fill="currentColor" /> <circle cx="8.499" cy="4.5" r=".6" fill="currentColor" /> <circle cx="8.499" cy="6.499" r=".6" fill="currentColor" /> <circle cx="8.499" cy="8.499" r=".6" fill="currentColor" /> <circle cx="8.499" cy="10.498" r=".6" fill="currentColor" /> <circle cx="8.499" cy="12.498" r=".6" fill="currentColor" /> <circle cx="10.499" cy="2.5" r=".6" fill="currentColor" /> <circle cx="10.499" cy="4.5" r=".6" fill="currentColor" /> <circle cx="10.499" cy="6.499" r=".6" fill="currentColor" /> <circle cx="10.499" cy="8.499" r=".6" fill="currentColor" /> <circle cx="10.499" cy="10.498" r=".6" fill="currentColor" /> <circle cx="10.499" cy="12.498" r=".6" fill="currentColor" />
+                </svg>
+                  
+            </div>
+            <div class="box media github">
+                <a href="https://github.com/cluod-Alfakhre?tab=repositories" target="_blank" class="arrow-link">
+                    <img src="images/arrow.svg" alt="arrow forward" class="arrow">
+                </a>
+                <svg width="80px" height="80px" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512"><title>Logo Github</title><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg>
+            </div>
+
+            <div class="box media code-wars">
+                <a href="https://space-project-350b1.web.app/home" class="arrow-link" target="_blank">
+                    <img src="images/arrow.svg" alt="arrow forward" class="arrow">
+                </a>
+                <img src="images/codewars.svg" alt="code wars">
+            </div>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
