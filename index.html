@@ -13,6 +13,13 @@
     
 </head>
 <body>
+
+    <div class="fixedDiv right rounded"></div>
+    <div class="fixedDiv left rounded"></div>
+
+    <div class="fixedDiv right-bottom rounded"></div>
+    <div class="fixedDiv left-bottom rounded"></div>
+
     <main>
         <header>
             <div class="theme">
@@ -24,11 +31,11 @@
                 </div>
             </div>
             <ul class="nav">
-                <li class="active">All</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Media</li>
-                <li>Language</li>
+                <li class="active"><a href="#">All</a> </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#store">Projects</a></li>
+                <li><a href="#media">Media</a></li>
+                <li class="lang">Language</li>
             </ul>
             <button class="contact-btn">
                 <a href="#">
@@ -37,7 +44,7 @@
             </button>
         </header>
         <div class="container">
-            <div class="box columns-2 rows-2 introduction">
+            <div class="box columns-2 rows-2 introduction about" data-order="1" >
                 <img src="images/avatar.png" alt="avatar image" class="avatar">
                 <h4>Hello! My name is</h4>
                 <h2 class="name">Hasan Mahmoud</h2>
@@ -52,7 +59,7 @@
                     </a>
                 </button>
             </div>
-            <div class="box columns-2 job-intro">
+            <div class="box columns-2 job-intro about" data-order="2">
                 <h2 class="title">What I Do ...!</h2>
                 <ul class="text">
                     <li>Develoliing and maintaining the user interface.</li>
@@ -61,7 +68,7 @@
                     <li>Following SEO best practices.</li>
                 </ul>
             </div>
-            <div class="box theme-box">
+            <div class="box theme-box" data-order="3">
 
                 <div class="theme">
                     <div class="sun">
@@ -75,7 +82,7 @@
             </div>
 
             
-            <div class="box rows-2 comment-project">
+            <div class="box rows-2 comment-project projects" data-order="4" >
 
                 <a href="https://cluod-alfakhre.github.io/interactive-comments-section-main/" target="_blank" class="arrow-link">
                     <img src="images/arrow.svg" alt="arrow forward" class="arrow">
@@ -88,7 +95,7 @@
                 <img src="images/comment.jpg" alt="comment project" class="project-img">
             </div>
 
-            <div class="box rows-2 learning-path">
+            <div class="box rows-2 learning-path" data-order="5">
                 <h2 class="title">
                     Learning Path
                 </h2>
@@ -99,7 +106,7 @@
                         <svg width="32px" height="32px" viewBox="-52.5 0 361 361" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M127.844 360.088L23.662 331.166.445 70.766h255.11l-23.241 260.36-104.47 28.962z" fill="#264DE4"/><path d="M212.417 314.547l19.86-222.49H128V337.95l84.417-23.403z" fill="#2965F1"/><path d="M53.669 188.636l2.862 31.937H128v-31.937H53.669zM47.917 123.995l2.903 31.937H128v-31.937H47.917zM128 271.58l-.14.037-35.568-9.604-2.274-25.471h-32.06l4.474 50.146 65.421 18.16.147-.04V271.58z" fill="#EBEBEB"/><path d="M60.484 0h38.68v16.176H76.66v16.176h22.506v16.175H60.484V0zM106.901 0h38.681v14.066h-22.505v2.813h22.505v32.352h-38.68V34.46h22.505v-2.813H106.9V0zM153.319 0H192v14.066h-22.505v2.813H192v32.352h-38.681V34.46h22.505v-2.813H153.32V0z"/><path d="M202.127 188.636l5.765-64.641H127.89v31.937h45.002l-2.906 32.704H127.89v31.937h39.327l-3.708 41.42-35.62 9.614v33.226l65.473-18.145.48-5.396 7.506-84.08.779-8.576z" fill="#FFF"/></svg>
                     </div>
                     <div class="text">
-                        <p>Build Responsive Websites with HTML and CSS</p>
+                        <p>Build Responsive Websites with HTML CSS and SASS</p>
                         <p class="state">completed</p>
                     </div>
                 </div>
@@ -131,7 +138,7 @@
                     </div>
                 </div>
             </div>
-            <div class="box columns-2 store project">
+            <div class="box columns-2 store project projects" data-order="6" id="store">
                 <a href="https://cluod-alfakhre.github.io/ecommerce-product-pag-angular/" target="_blank" class="arrow-link">
                     <img src="images/arrow.svg" alt="arrow forward" class="arrow">
                 </a>
@@ -143,7 +150,7 @@
                 <img src="images/store.jpg" alt="store image" class="project-img">
             </div>
 
-            <div class="box slider">
+            <div class="box slider projects" data-order="7" >
                 
                 <div class="swiper">
                     <!-- Additional required wrapper -->
@@ -171,7 +178,7 @@
 
             </div>
 
-            <div class="box columns-2 space project">
+            <div class="box columns-2 space project projects" data-order="8" >
 
                 <a href="https://space-project-350b1.web.app/home" class="arrow-link" target="_blank">
                     <img src="images/arrow.svg" alt="arrow forward" class="arrow">
@@ -183,7 +190,7 @@
                 </div>
                 <img src="images/space.jpg" alt="space image" class="project-img">
             </div>
-            <div class="box columns-2 media frontend-mentor">
+            <div class="box columns-2 media frontend-mentor" data-order="9">
 
                 <a href="https://www.frontendmentor.io/profile/cluod-Alfakhre" target="_blank" class="arrow-link">
                     <img src="images/arrow.svg" alt="arrow forward" class="arrow">
@@ -199,15 +206,15 @@
                 </svg>
                   
             </div>
-            <div class="box media github">
+            <div class="box media github" data-order="10">
                 <a href="https://github.com/cluod-Alfakhre?tab=repositories" target="_blank" class="arrow-link">
                     <img src="images/arrow.svg" alt="arrow forward" class="arrow">
                 </a>
                 <svg width="80px" height="80px" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512"><title>Logo Github</title><path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path></svg>
             </div>
 
-            <div class="box media code-wars">
-                <a href="https://space-project-350b1.web.app/home" class="arrow-link" target="_blank">
+            <div class="box media code-wars" data-order="11" id="media">
+                <a href="https://www.codewars.com/users/cluod-Alfakhre" class="arrow-link" target="_blank">
                     <img src="images/arrow.svg" alt="arrow forward" class="arrow">
                 </a>
                 <img src="images/codewars.svg" alt="code wars">
